@@ -105,7 +105,7 @@ const KontakPage = () => {
                     id="name"
                     name="name"
                     placeholder="Dari siapa pesan ini?"
-                    className="w-full border-b-2 border-gray-300 focus:border-orange-500 focus:bg-gray-100 transition-all p-2 focus:outline-none"
+                    className="w-full border-b-2 outline-none border-gray-300 focus:border-orange-500 focus:bg-gray-100 transition-all p-2 focus:outline-none"
                   />
                 </div>
                 <div className="mb-6">
@@ -120,7 +120,7 @@ const KontakPage = () => {
                     id="from"
                     name="from"
                     placeholder="Berasal dari mana anda?"
-                    className="w-full border-b-2 border-gray-300 focus:border-orange-500 focus:bg-gray-100 transition-all p-2 focus:outline-none"
+                    className="w-full outline-none border-b-2 border-gray-300 focus:border-orange-500 focus:bg-gray-100 transition-all p-2 focus:outline-none"
                   />
                 </div>
                 <div className="mb-6">
@@ -135,14 +135,12 @@ const KontakPage = () => {
                     name="comment"
                     rows="4"
                     placeholder="Masukkan tanggapan anda terhadap kami"
-                    className="w-full border-b-2 border-gray-300 focus:border-orange-500 focus:bg-gray-100 transition-all p-2 focus:outline-none"
+                    className="w-full border-b-2 outline-none border-gray-300 focus:border-orange-500 focus:bg-gray-100 transition-all p-2 focus:outline-none"
                   />
                 </div>
-                <button
-                  type="submit"
-                  className="w-full bg-black text-white py-2 px-4 rounded hover:bg-orange-500 transition-colors"
-                >
-                  Kirim ke Email
+                <button className="relative bg-orange-500 hover:bg-black transition duration-300 w-full py-2 group">
+                  <div className="absolute top-0 left-0 border transition duration-300 border-white group-hover:scale-x-[0.98] group-hover:scale-y-[0.80] h-full w-full"></div>
+                  <div className="text-white">Kirim Pesan</div>
                 </button>
               </form>
             </div>
