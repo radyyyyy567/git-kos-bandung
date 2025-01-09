@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./Components/HomeDashboardComponents/HomePage";
 import TentangPage from "./Components/TentangComponents/TentangPage";
 import KontakPage from "./Components/KontakComponents/KontakPage";
+import DetailItemPage from "./Components/DetailItemComponent/DetailItemPage";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -34,6 +35,7 @@ function App() {
               <Route path="/" element={<HomePage />} />              
               <Route path="/tentang" element={<TentangPage />} />              
               <Route path="/kontak" element={<KontakPage />} />              
+              <Route path="/detail" element={<DetailItemPage />} />              
            </Routes>
 
         </BrowserRouter>
