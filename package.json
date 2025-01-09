@@ -1,5 +1,5 @@
 {
-  "name": "frontend-monitoring-iot",
+  "name": "git-kos-bandung",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,6 +7,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.7.0",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@lottiefiles/dotlottie-react": "^0.12.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
@@ -56,6 +57,7 @@
     ]
   },
   "devDependencies": {
+    "ajv": "^7.2.4",
     "daisyui": "^4.12.14"
   }
 }
