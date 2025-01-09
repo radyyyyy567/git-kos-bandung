@@ -7,6 +7,8 @@ import HomePage from "./Components/HomeDashboardComponents/HomePage";
 import TentangPage from "./Components/TentangComponents/TentangPage";
 import KontakPage from "./Components/KontakComponents/KontakPage";
 import DetailItemPage from "./Components/DetailItemComponent/DetailItemPage";
+import ScrollToTop from "./Components/utils/ScrollToTop";
+import MainLayout from "./Layouts/Components/MainLayout";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -30,14 +32,15 @@ function App() {
         <Loading />
       ) : (
         <BrowserRouter>
-
+            <ScrollToTop />
+            <MainLayout>
             <Routes>
               <Route path="/" element={<HomePage />} />              
               <Route path="/tentang" element={<TentangPage />} />              
               <Route path="/kontak" element={<KontakPage />} />              
               <Route path="/detail" element={<DetailItemPage />} />              
            </Routes>
-
+            </MainLayout>
         </BrowserRouter>
       )}
     </>
